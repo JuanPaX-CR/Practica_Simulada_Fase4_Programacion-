@@ -1,13 +1,16 @@
-# Jhonatan David Cardenas Sancchez
-# Servicios
+"""
+PARTE 2: Servicios
+Autor: Jhonatan David Cardenas Sanchez (John367219)
+
+Clase abstracta Servicio y sus tres implementaciones:
+- ReservaSala:           tarifa x horas
+- AlquilerEquipo:        tarifa x horas + seguro fijo de 20
+- AsesoriaEspecializada: tarifa x horas + IVA 19 %
+"""
+
 from abc import ABC, abstractmethod
 
-
-# EXCEPCIÓN PERSONALIZADA
-
-
-class ServicioError(Exception):
-    pass
+from excepciones import ServicioError
 
 
 # CLASE ABSTRACTA SERVICIO
